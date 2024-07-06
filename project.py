@@ -47,7 +47,7 @@ def recommend(movie):
     return recommended_movies
 
 selected_movie_name= st.selectbox(
-    '', movies['title'].values)
+    'Give me a movie you love, and I’ll find some great recommendations for you!', movies['title'].values)
 if st.button('Recommend'):
     recommendations = recommend(selected_movie_name)
     for i in recommendations:
